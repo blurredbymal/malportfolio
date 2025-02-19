@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Malachy's Photography Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <h1>Malachy's Photography</h1>
+            <nav>
+                <ul>
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#landscapes">Landscapes</a></li>
+                    <li><a href="#sports">Sports</a></li>
+                    <li><a href="#portraits">Portraits</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="hero-text">
+            <h2>Capturing Life, Frame by Frame</h2>
+            <p>Explore my journey through landscapes, sports, and portraits.</p>
+            <a href="#contact" class="btn">Get in Touch</a>
+        </div>
+    </section>
+
+    <!-- Landscapes Section -->
+    <section id="landscapes" class="gallery">
+        <h2>Landscapes</h2>
+        <div class="images">
+            <img src="landscape1.jpg" alt="Landscape 1">
+            <img src="landscape2.jpg" alt="Landscape 2">
+            <img src="landscape3.jpg" alt="Landscape 3">
+        </div>
+    </section>
+
+    <!-- Sports Section -->
+    <section id="sports" class="gallery">
+        <h2>Sports</h2>
+        <div class="images">
+            <img src="sports1.jpg" alt="Sports 1">
+            <img src="sports2.jpg" alt="Sports 2">
+            <img src="sports3.jpg" alt="Sports 3">
+        </div>
+    </section>
+
+    <!-- Portraits Section -->
+    <section id="portraits" class="gallery">
+        <h2>Portraits</h2>
+        <div class="images">
+            <img src="portrait1.jpg" alt="Portrait 1">
+            <img src="portrait2.jpg" alt="Portrait 2">
+            <img src="portrait3.jpg" alt="Portrait 3">
+        </div>
+    </section>
+
+    <!-- Contact & Booking Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Feel free to reach out for inquiries, collaborations, or booking requests.</p>
+        
+        <!-- Contact Form -->
+        <form id="contact-form" action="mailto:your-email@example.com" method="post" enctype="text/plain">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+            
+            <button type="submit">Send Email</button>
+        </form>
+
+        <!-- Booking Form -->
+        <div id="booking-section">
+            <h3>Request a Photography Session</h3>
+            <form id="booking-form">
+                <label for="session-type">Session Type:</label>
+                <select id="session-type" name="session-type" required>
+                    <option value="" disabled selected>Select a Session</option>
+                    <option value="Portrait">Portrait</option>
+                    <option value="Sports">Sports</option>
+                    <option value="Event">Event</option>
+                    <option value="Landscape">Landscape</option>
+                </select>
+                
+                <label for="date">Preferred Date:</label>
+                <input type="date" id="date" name="date" required>
+                
+                <label for="details">Additional Details:</label>
+                <textarea id="details" name="details" rows="4" placeholder="Any specific requests or details"></textarea>
+                
+                <button type="button" id="send-booking">Submit Request</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Malachy's Photography. Follow me on 
+            <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+        </p>
+    </footer>
+
+</body>
+</html>
